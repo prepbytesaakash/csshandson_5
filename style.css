@@ -1,0 +1,267 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-image:url(./shara\ desert.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+  
+  .logo {
+    width: 50px; 
+    height: 50px; 
+    
+  }
+
+
+.nav{
+    width:30%;
+    display:flex;
+    margin:30px;
+    justify-content:space-around;
+    position:absolute;
+    right:25px;
+    cursor:pointer;
+   }
+a{
+    text-decoration:none;
+    color:white;
+}
+.home,.region,.nav{
+    color:white;
+    align-items:center;
+    
+}
+.img{
+    padding:40px;
+}
+.box{
+    width:40%;
+    height:55vh;
+    display:flex;
+    flex-wrap:wrap;
+    
+    justify-content:space-evenly;
+    float:right;
+    margin-top: 10%;
+    margin-right: 5%;
+    }
+.one{
+    width:33%;
+    height:220px;
+    padding:10px;
+    background-image:url(./pic-1.png);
+    background-size:cover;
+    color:white;
+    border-radius:10px;
+
+
+}
+.two{
+    width:33%;
+    height:220px;
+    padding:10px;
+    color:white;
+    background-image:url(./pic-2.png);
+    background-size:cover;
+    border-radius:10px;
+
+}
+.three{
+    width:33%;
+    height:220px;
+    padding:10px;
+    color:white;
+    background-image:url(./pic-3.png);
+    background-size:cover;
+    border-radius:10px;
+    margin-top: 5%;
+  
+
+}
+.four{
+    width:33%;
+    height:220px;
+    padding:10px;
+    color:white;
+    background-image:url(./pic-4.png);
+    background-size:cover;
+    border-radius:10px;
+    margin-top: 5%;
+  
+}
+
+
+.one:hover{
+    transition:1s;
+    transform:translateY(-8px);
+
+}
+.two:hover{
+    transition:1s;
+    transform:translateY(-8px);
+}
+.three:hover{
+    transition:1s;
+    transform:translateY(-8px);
+
+}
+.four:hover{
+    transition:1s;
+    transform:translateY(-8px);
+
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    margin-left: 10%;
+  
+}
+.sahara{
+    margin-top: 10%;
+    font-size:120%;
+    color:white;
+    margin-left: 5%;
+    margin-top: 20%;
+
+}
+h1{
+    font-size:4em;
+}
+span{
+    background-color:white;
+    border-radius:5em;
+    color:black;
+    padding:.4em 3em;
+    font-weight:bold;
+    
+}
+/* for mobile screen only */
+ @media screen and (min-width:160px) and (max-width:500px){
+  body{
+    width:100%;
+  }
+    .nav{
+    flex-direction:column;
+     gap: 10px;
+   }
+   .nav {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    position: static;
+}
+
+.nav > div {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+   .img{
+    padding:3px;
+    
+   }
+   
+   .box{
+       width:100px;
+       height:auto;
+       margin-top:20px;
+       margin:auto;
+       gap:10px;
+       flex-direction:column;
+    
+   }
+   .container{
+    flex-direction:column;
+   }
+  
+    .one{
+        width:120%;
+        padding:10px;
+        margin:auto;
+        align-items:center;
+    }
+    .two{
+        width:120%;
+        padding:10px;
+        align-items:center;
+    }
+    .three{
+        width:120%;
+        padding:10px;
+        align-items:center;
+    }
+    .four{
+        width:120%;
+        padding:10px;
+        align-items:center;
+    }
+ }
+ /* for i pad */
+@media screen and (min-width:500px) and (max-width:850px){
+    body{
+        padding:20px;
+    }
+    .nav{
+        gap:1px;
+    }
+
+
+
+
+
+ 
+    .img{
+     padding:3px;
+     
+    }
+    
+    .box{
+        width:600px;
+        height:auto;
+        margin-top:30px;
+        margin-left:20px;
+        gap:20px;
+        flex-direction:column;
+    
+     
+    }
+    .container{
+     flex-direction:column;
+    }
+   
+     .one{
+         width:90%;
+         height:200px;
+         margin:auto;
+         
+     }
+     .two{
+        width:90%;
+        height:200px;
+        margin:auto;
+     }
+     .three{
+        width:90%;
+        height:200px;
+        margin:auto;
+     }
+     .four{
+        width:90%;
+        height:200px;
+        margin:auto;
+     }
+ }
